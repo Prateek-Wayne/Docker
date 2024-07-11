@@ -1,8 +1,14 @@
 import mongoose from "mongoose";
 
 // const MONGO_URI = "mongodb://mongodbi_db:27017/mydatabase";
-const MONGO_URI = "mongodb://mymongodb/testdb";
+// const MONGO_URI = "'mongodb://mongo:27017/myDatabase'";
+// const MONGO_URI = "mongodb://prateekNetwork/testdb";
+// const MONGO_URI = "mongodb://mongoDBPrateek:27017/testdb";
+const MONGO_URI = "mongodb://mongoDB:27017/testdb";
+console.log("My name is Prateek Verma")
 
+// const MONGO_URI = "mongodb://localhost:27017/testdb";
+console.log(`MONGO_URI is this :${MONGO_URI}`);
 mongoose.connect(MONGO_URI, {})
     .then(() => console.log('Successfully connected to MongoDB'))
     .catch(err => {
